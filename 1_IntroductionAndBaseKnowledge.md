@@ -26,6 +26,37 @@ LINQ queries and code first development.
 ### Run-time downloads for windows
 [https://dotnet.microsoft.com/en-us/download/dotnet]
 
+## Type ORM in .NET
+Entity Framework Core (EF Core) is a popular ORM framework for .NET. It provides an object-relational mapping layer that allows developers to work with database entities as C# objects. without writing SQL queries directly. Instead of it, EF Core allows developers to write LINQ queries in C# and automatically translates them into SQL statements for the underlying database.
+### Create model class
+```
+public class User
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Email { get; set; }
+}
+```
+### Create DbContext class
+```
+public class AppDbContext : DbContext
+{
+    public DbSet<User> Users { get; set; }
+    
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlite("Data Source=app.db");
+    }
+}
+```
+### multiple database providers
+```
+using var context = new AppDbContext();
+var user = new User { Name = "张三", Email = "zhangsan@example.com" };
+context.Users.Add(user);
+context.SaveChanges();
+```
+
 ## C# important features
 ### async and await
 1. normally in C# we use async and await to handle <span style="font-weight:bold">asynchronous</span> operations. <span style="font-weight:bold">async</span> used to declare a method as asynchronous, and it can contain await expressions, will return a Task or Task<T> even return a void (usually we don't allow do it).
@@ -45,7 +76,7 @@ public async Task ExampleMethod()
 ```
 public void MethodThatCanCauseDeadlock()
 {
-    var result = DoSomethingAsync().Result; // 这里会阻塞主线程，可能导致死锁
+    var result = DoSomethingAsync().Result; // here will stuck the thread and result in deadlock.
 }
 ```
 5. mutitask coding, use Task.WhenAll or await Task.WhenAll to run multiple tasks in parallel and wait for all of them to complete.
@@ -57,7 +88,6 @@ public async Task ExampleMethod()
     
     await Task.WhenAll(task1, task2);
 }
-
 ```
 
 

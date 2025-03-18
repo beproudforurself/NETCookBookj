@@ -1585,11 +1585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\StudentsTestAPI.csproj",
+      "projectUniqueName": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI\\StudentsTestAPI.csproj",
       "projectName": "StudentsTestAPI",
-      "projectPath": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\StudentsTestAPI.csproj",
+      "projectPath": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI\\StudentsTestAPI.csproj",
       "packagesPath": "C:\\Users\\ZPG1SZH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\obj\\",
+      "outputPath": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

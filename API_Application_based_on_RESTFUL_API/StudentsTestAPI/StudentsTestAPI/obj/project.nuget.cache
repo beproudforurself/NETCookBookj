@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kZYvNamLFGNrGxmDKJSOD82W4tgDlR9p5J0TUsBuuI7pz3AyH19ccocuLjvppHHJ1ZicRRSSnQivWlkIXYI02g==",
+  "dgSpecHash": "4QR2+PapBizquVfc2rF+FsSY74GbraUXk4PWqvhhp1UlQ11/ngd7apR4OY/3iYd6BPlFsRPATC7HnoDYhYdNQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\StudentsTestAPI.csproj",
+  "projectFilePath": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI\\StudentsTestAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZPG1SZH\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",
     "C:\\Users\\ZPG1SZH\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
