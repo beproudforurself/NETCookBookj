@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|c:\\users\\zpg1szh\\source\\repos\\studentstestapi\\studentstestapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|c:\\users\\zpg1szh\\source\\repos\\studentstestapi\\studentstestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\studentstestapi\\data\\studentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\data\\studentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|c:\\users\\zpg1szh\\source\\repos\\studentstestapi\\studentstestapi\\students.db||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\students.db||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\studentstestapi\\studentstestapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\studentstestapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\studentstestapi\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\studentstestapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 66,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "students.db",
+              "DocumentMoniker": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\students.db",
+              "RelativeDocumentMoniker": "StudentsTestAPI\\students.db",
+              "ToolTip": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\students.db",
+              "RelativeToolTip": "StudentsTestAPI\\students.db",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-18T07:21:40.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "StudentsTestAPI\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "StudentsTestAPI\\Controllers\\StudentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:39:06.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentContext.cs",
+              "DocumentMoniker": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\Data\\StudentContext.cs",
+              "RelativeDocumentMoniker": "StudentsTestAPI\\Data\\StudentContext.cs",
+              "ToolTip": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\Data\\StudentContext.cs",
+              "RelativeToolTip": "StudentsTestAPI\\Data\\StudentContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:28:29.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "StudentsTestAPI\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\Models\\Student.cs",
+              "RelativeToolTip": "StudentsTestAPI\\Models\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:24:11.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentsTestAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\StudentsTestAPI.csproj",
+              "RelativeDocumentMoniker": "StudentsTestAPI\\StudentsTestAPI.csproj",
+              "ToolTip": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\StudentsTestAPI.csproj",
+              "RelativeToolTip": "StudentsTestAPI\\StudentsTestAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-18T06:23:42.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\Program.cs",
+              "RelativeDocumentMoniker": "StudentsTestAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\Program.cs",
+              "RelativeToolTip": "StudentsTestAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T06:18:38.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentsTestAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\ZPG1SZH\\source\\repos\\StudentsTestAPI\\StudentsTestAPI\\appsettings.json",
+              "RelativeToolTip": "StudentsTestAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-18T06:20:08.837Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 135,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
