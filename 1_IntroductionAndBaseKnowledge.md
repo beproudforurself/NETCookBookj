@@ -52,12 +52,121 @@ public class AppDbContext : DbContext
 ### multiple database providers
 ```
 using var context = new AppDbContext();
-var user = new User { Name = "张三", Email = "zhangsan@example.com" };
+var user = new User {Id="xxx", Name = "张三", Email = "zhangsan@example.com" };
 context.Users.Add(user);
 context.SaveChanges();
 ```
 
 ## C# important features
+### attributes get/set
+.get is used to get the value of a property, .set is used to set the value of a property.
+.{ get; set; } public get and set accessors.
+.{ get; private set; } public get and internal write.
+.{ get; protected set; } can only be set in children classes.
+```
+public class Person
+{
+    public string Name { get; set; }
+
+    private int _age;
+    public int Age
+    {
+        get { return _age; }
+        set { 
+                if (value >= 0 && value <= 120)
+                {
+                    _age = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Age must be between 0 and 120");
+                }
+            }
+    }
+
+    public bool IsAdult
+    {
+        get { return Age >= 18; }
+    }
+    public DateTime BirthDate { get; set; }
+
+    public double Salary { get; private set; }
+
+    public int BirthYear 
+    {
+        get 
+        {
+            return DateTime.Now.Year - Age;
+        }
+    }
+
+}
+//usage
+class Program
+{
+    static void Main()
+    {
+        Person person = new Person();
+        person.Name = "zhangsan";
+        person.Age = 25; 
+        Console.WriteLine($"Name: {person.Name}, age: {person.Age}");
+        Console.WriteLine($"IsAdult: {person.IsAdult}");
+    }
+}
+```
+
+### Generics
+.Generics allows us code reuseable class, methods or custom classes. It can reduce code duplication and improve type safety.
+We can use generics to declare class, methods, interfaces, Delegate, Struct.
+.class example:
+```
+public class Box<T>
+{
+    private T value;
+
+    public void Store(T input)
+    {
+        value = input;
+    }
+
+    public T Retrieve()
+    {
+        return value;
+    }
+}
+
+// usage
+class Program
+{
+    static void Main()
+    {
+        //store int value
+        Box<int> intBox = new Box<int>();
+        intBox.Store(123);
+        int number = intBox.Retrieve();
+
+        //store string value
+        Box<string> stringBox = new Box<string>();
+        stringBox.Store("Hello, World!");
+        string message = stringBox.Retrieve();
+    }
+}
+```
+.method example:
+```
+public static void Swap<T>(ref T a, ref T b)
+{
+    T temp = a;
+    a = b;
+    b = temp;
+}
+//usage
+int x = 5, y = 10;
+Swap(ref x, ref y);
+
+string first = "Hello", second = "World";
+Swap(ref first, ref second);
+```
 ### async and await
 1. normally in C# we use async and await to handle <span style="font-weight:bold">asynchronous</span> operations. <span style="font-weight:bold">async</span> used to declare a method as asynchronous, and it can contain await expressions, will return a Task or Task<T> even return a void (usually we don't allow do it).
 2. <span style="font-weight:bold">await</span> used to pause the execution of an async method at a certain point, and resume it when the awaited task completes. It can only be used inside async methods. identically means it will not stuck the thread.
@@ -79,7 +188,7 @@ public void MethodThatCanCauseDeadlock()
     var result = DoSomethingAsync().Result; // here will stuck the thread and result in deadlock.
 }
 ```
-5. mutitask coding, use Task.WhenAll or await Task.WhenAll to run multiple tasks in parallel and wait for all of them to complete.
+5. multitask coding, use Task.WhenAll or await Task.WhenAll to run multiple tasks in parallel and wait for all of them to complete.
 ```
 public async Task ExampleMethod()
 {
@@ -89,6 +198,43 @@ public async Task ExampleMethod()
     await Task.WhenAll(task1, task2);
 }
 ```
+#### summary
+<span style="font-weight:bold">Since a thread can have multiple tasks, and without async will not stop other web api request</span>. Due to this reason, async and await means not distribute other threads, but improve the efficiency of the thread. With async and await, currently thread will be collected back to thread pool.
+For a instance, it's like two pipeline workers, one is responsible for the packing, and another is responsible for the moving package. if the guy is packing something, the other one is no need to wait the package and move it one by one, instead of it, he can go other position and do other works. Once the packing finish, he just need move the total package one time. This can draft describe the async and await operation.
+
+### IActionResult/ActionResult
+1. <span style="font-weight:bold">IActionResult</span> is an interface in ASP.NET Core MVC that represents a result of an action method, which can be used to return different types of responses from the controller actions.
+it suits for different types of responses, such as NotFound(), Ok(), StatusCode(), File(), View(), RedirectToAction() etc.
+```
+ [HttpGet("flexible/{id}")]
+        public IActionResult GetProductFlexible(int id)
+        {
+            var product = _products.Find(p => p.Id == id);
+
+            if (product == null)
+                return NotFound(new { Message = "Product not found" }); // 404
+            
+            if (product.Price > 900)
+                return StatusCode(403, new { Message = "Premium product access restricted" }); // 403
+
+            return Ok(product); // 200
+        }
+```
+2. <span style="font-weight:bold">ActionResult</span> is a class that implements the IActionResult interface and represents a result of an action method. It is used when you want to return a specific type of response from your controller actions.
+```
+ [HttpGet("specific/{id}")]
+        public ActionResult<Product> GetProductSpecific(int id)
+        {
+            var product = _products.Find(p => p.Id == id);
+
+            if (product == null)
+                return NotFound(); // NotFoundResult
+
+            return product; // 自动转换为 OkObjectResult
+        }
+```
+
+
 
 
 
