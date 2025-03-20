@@ -18,13 +18,17 @@ LINQ queries and code first development.
 
 .Blazor is a framework for building interactive web UIs using C# instead of JavaScript.
 
-.ML.NET is a Machine Learning framework, support for classification, regression and clustering, also intergreated with python ML ecosystem.
+.ML.NET is a Machine Learning framework, support for classification, regression and clustering, also integrated with python ML ecosystem.
 
 .WPF and WinForms are used to build desktop applications. For WPF(windows presentation foundation) is a modern UI framework uses XAML to separate UI from code, and WinForms(windows forms) is an older UI framework.
 
 ...
 ### Run-time downloads for windows
 [https://dotnet.microsoft.com/en-us/download/dotnet]
+
+### SQLite browser
+[https://sqlitebrowser.org/blog/version-3-13-1-released/]
+
 
 ## Type ORM in .NET
 Entity Framework Core (EF Core) is a popular ORM framework for .NET. It provides an object-relational mapping layer that allows developers to work with database entities as C# objects. without writing SQL queries directly. Instead of it, EF Core allows developers to write LINQ queries in C# and automatically translates them into SQL statements for the underlying database.
@@ -167,6 +171,85 @@ Swap(ref x, ref y);
 string first = "Hello", second = "World";
 Swap(ref first, ref second);
 ```
+
+### Delegate
+.Delegate is a type safety object, it defines a reference type that encapsulates a method with a particular parameter list and return type. Which means delegate can store any method or params that have same return value. In some cases, it can be understand as a function pointer.
+.simple example:
+```
+public class DelegateExample
+{
+    //define a delegate type
+    public delegate int Calculate(int x, int y);
+
+    //some method that matches the delegate signature
+    public int Add(int a, int b)
+    {
+        return a + b;
+    }
+    public int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+
+    public void Demo()
+    {
+        Calculate calc = new Calculate(Add);
+        int result = calc(5, 3);
+
+        //change the method
+        calc = multiply;
+        result = calc(5, 3);
+    }
+
+}
+```
+.multicast delegate example:
+```
+public class MulticastDemo
+{
+    public delegate void Logger(string message);
+
+    public void WriteToConsole(string msg)
+    {
+        console.WriteLine(msg);
+    }
+
+    public void WriteToFile(string msg)
+    {
+        System.IO.File.WriteAllText("log.txt", msg+"\n");
+    }
+
+    public void demo()
+    {
+        Logger logger = new Logger(WriteToConsole);
+        logger += WriteToFile; //multicast delegate
+        logger("Hello, World!");
+    }
+}
+```
+.NET inside delegate example:
+```
+public class BuildInDelegateDemo
+{
+    //Func: has return value
+    public void DemoFunc()
+    {
+        Func<int, int, int> calculate = (a, b) => a + b;
+        int result = calculate(5, 3);
+    }
+    //Action: no return value
+    public void DemoAction()
+    {
+        Action<string> print = msg => console.WriteLine(msg);
+        print("Hello, World!");
+    }
+}
+
+```
+
+
+
+
 ### async and await
 1. normally in C# we use async and await to handle <span style="font-weight:bold">asynchronous</span> operations. <span style="font-weight:bold">async</span> used to declare a method as asynchronous, and it can contain await expressions, will return a Task or Task<T> even return a void (usually we don't allow do it).
 2. <span style="font-weight:bold">await</span> used to pause the execution of an async method at a certain point, and resume it when the awaited task completes. It can only be used inside async methods. identically means it will not stuck the thread.

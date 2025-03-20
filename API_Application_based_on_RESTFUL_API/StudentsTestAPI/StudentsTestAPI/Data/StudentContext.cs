@@ -28,4 +28,5 @@ namespace StudentsTestAPI.Data
         }
     }
 }
+//command to generate table ORM
 /*Scaffold-DbContext "Data Source=students.db" Microsoft.EntityFrameworkCore.Sqlite -OutputDir Models -ContextDir Data -Context StudentContext -Tables Students*/
