@@ -172,6 +172,55 @@ string first = "Hello", second = "World";
 Swap(ref first, ref second);
 ```
 
+### Reflection
+
+Reflection(<span style="font-weight:bold">System.Reflection</span>) allows Program to inspect and manipulate the metadata of types at runtime. Shortly, it can be used to get type, method and property information at runtime.
+1. dynamic type inspection(ensure the type of object at program run time).
+2. dynamic invoke method.
+3. read and write property attribute.
+4. create new instance of class.
+   
+meanwhile, reflection is a heavy operation and should be used carefully. Due to this reason, reflection is not suitable for performance-critical code.
+
+```
+using System;
+using System.Reflection;
+
+//basic reflection example
+public class BasicReflectionExample
+{
+    public void ShowBasicTypeInfo()
+    {
+        Type type = typeof(string);
+
+        Console.WriteLine($"Type Name: {type.Name}");
+        Console.WriteLine($"Full Typename: {type.FullName}");
+        Console.WriteLine($"Namespace: {type.Namespace}");
+    }
+}
+
+//inspect member type info
+public class MemberInspectionDemo
+{
+    public void InspectTypeMembers()
+    {
+        Type type = typeof(Person);
+
+        //get all public properties
+        foreach(var method in type.GetMethods())
+        {
+            Console.WriteLine($"Method Name: {method.Name}");
+        }
+        //get all public properties
+        foreach(var property in type.GetProperties())
+        {
+            Console.WriteLine($"Property Name: {property.PropertyType}");
+        }
+
+    }
+}
+```
+
 ### Delegate
 .Delegate is a type safety object, it defines a reference type that encapsulates a method with a particular parameter list and return type. Which means delegate can store any method or params that have same return value. In some cases, it can be understand as a function pointer.
 .simple example:
@@ -246,9 +295,6 @@ public class BuildInDelegateDemo
 }
 
 ```
-
-
-
 
 ### async and await
 1. normally in C# we use async and await to handle <span style="font-weight:bold">asynchronous</span> operations. <span style="font-weight:bold">async</span> used to declare a method as asynchronous, and it can contain await expressions, will return a Task or Task<T> even return a void (usually we don't allow do it).
