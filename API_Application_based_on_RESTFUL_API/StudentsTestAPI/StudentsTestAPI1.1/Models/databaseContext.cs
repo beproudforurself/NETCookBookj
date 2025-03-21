@@ -37,3 +37,5 @@ namespace StudentsTestAPI1._1.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
+//
+/*Scaffold-DbContext "Data Source=database.db" Microsoft.EntityFrameworkCore.Sqlite -OutputDir Models -Force -UseDatabaseNames -Project StudentsTestAPI1.1 -StartupProject StudentsTestAPI1.1*/

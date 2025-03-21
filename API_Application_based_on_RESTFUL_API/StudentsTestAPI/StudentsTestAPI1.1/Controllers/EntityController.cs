@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudentsTestAPI1._1.Models;
+using StudentsTestAPI1._1.Utils;
 
 namespace StudentsTestAPI1._1.Controllers
 {
@@ -17,9 +18,17 @@ namespace StudentsTestAPI1._1.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<student>>> Getstudents()
+        public async Task<ActionResult<ApiResponse<IEnumerable<student>>>> Getstudents()
         {
-            return await _Context.students.ToListAsync();
+            try
+            {
+                var students = await _Context.students.ToListAsync();
+                return Ok(ApiResponse<IEnumerable<student>>.ResponseSuccess(students, "get all students info success"));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ApiResponse<IEnumerable<student>>.ResponseFailed($"get all students info failed: {ex.Message}", 500));
+            }          
         }
 
         [HttpPost]
