@@ -174,7 +174,7 @@ Swap(ref first, ref second);
 
 ### Reflection
 
-Reflection(<span style="font-weight:bold">System.Reflection</span>) allows Program to inspect and manipulate the metadata of types at runtime. Shortly, it can be used to get type, method and property information at runtime.
+Reflection(**System.Reflection**) allows Program to inspect and manipulate the metadata of types at runtime. Shortly, it can be used to get type, method and property information at runtime.
 1. dynamic type inspection(ensure the type of object at program run time).
 2. dynamic invoke method.
 3. read and write property attribute.
@@ -297,8 +297,8 @@ public class BuildInDelegateDemo
 ```
 
 ### async and await
-1. normally in C# we use async and await to handle <span style="font-weight:bold">asynchronous</span> operations. <span style="font-weight:bold">async</span> used to declare a method as asynchronous, and it can contain await expressions, will return a Task or Task<T> even return a void (usually we don't allow do it).
-2. <span style="font-weight:bold">await</span> used to pause the execution of an async method at a certain point, and resume it when the awaited task completes. It can only be used inside async methods. identically means it will not stuck the thread.
+1. normally in C# we use async and await to handle **asynchronous** operations. **async** used to declare a method as asynchronous, and it can contain await expressions, will return a Task or Task<T> even return a void (usually we don't allow do it).
+2. **await** used to pause the execution of an async method at a certain point, and resume it when the awaited task completes. It can only be used inside async methods. identically means it will not stuck the thread.
 .for example:
 ```
 public async Task ExampleMethod()
@@ -328,11 +328,11 @@ public async Task ExampleMethod()
 }
 ```
 #### summary
-<span style="font-weight:bold">Since a thread can have multiple tasks, and without async will not stop other web api request</span>. Due to this reason, async and await means not distribute other threads, but improve the efficiency of the thread. With async and await, currently thread will be collected back to thread pool.
+**Since a thread can have multiple tasks, and without async will not stop other web api request**. Due to this reason, async and await means not distribute other threads, but improve the efficiency of the thread. With async and await, currently thread will be collected back to thread pool.
 For a instance, it's like two pipeline workers, one is responsible for the packing, and another is responsible for the moving package. if the guy is packing something, the other one is no need to wait the package and move it one by one, instead of it, he can go other position and do other works. Once the packing finish, he just need move the total package one time. This can draft describe the async and await operation.
 
 ### IActionResult/ActionResult
-1. <span style="font-weight:bold">IActionResult</span> is an interface in ASP.NET Core MVC that represents a result of an action method, which can be used to return different types of responses from the controller actions.
+1. **IActionResult** is an interface in ASP.NET Core MVC that represents a result of an action method, which can be used to return different types of responses from the controller actions.
 it suits for different types of responses, such as NotFound(), Ok(), StatusCode(), File(), View(), RedirectToAction() etc.
 ```
  [HttpGet("flexible/{id}")]
@@ -349,7 +349,7 @@ it suits for different types of responses, such as NotFound(), Ok(), StatusCode(
             return Ok(product); // 200
         }
 ```
-2. <span style="font-weight:bold">ActionResult</span> is a class that implements the IActionResult interface and represents a result of an action method. It is used when you want to return a specific type of response from your controller actions.
+1. **ActionResult** is a class that implements the IActionResult interface and represents a result of an action method. It is used when you want to return a specific type of response from your controller actions.
 ```
  [HttpGet("specific/{id}")]
         public ActionResult<Product> GetProductSpecific(int id)
@@ -362,6 +362,56 @@ it suits for different types of responses, such as NotFound(), Ok(), StatusCode(
             return product; // 自动转换为 OkObjectResult
         }
 ```
+
+## LINQ Introduction 
+. LINQ(Language integrated Query) is a serach query language that is integrated into C# and VB.NET, which allows you to query data from various sources such as arrays, collections, XML documents, databases etc.
+### How to use LINQ
+1. Using System.Linq.
+2. Search query and Method query.
+```
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace LINQExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Sample data source
+            List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            // Query syntax example
+            var evenNumbersQuery = from num in numbers
+                                   where num % 2 == 0
+                                   select num;
+
+            Console.WriteLine("Even numbers using query syntax:");
+            foreach (var num in evenNumbersQuery)
+            {
+                Console.WriteLine(num);
+            }
+
+            // Method syntax example
+            var evenNumbersMethod = numbers.Where(num => num % 2 == 0);
+
+            Console.WriteLine("\nEven numbers using method syntax:");
+            foreach (var num in evenNumbersMethod)
+            {
+                Console.WriteLine(num);
+            }
+        }
+    }
+}
+
+```
+3. high frequently used key words：
+   - **From**
+   - **Where**
+   - **Select**
+   - **OrderBy**
+   - **GroupBy**
 
 
 
