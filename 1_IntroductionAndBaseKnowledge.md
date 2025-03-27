@@ -363,8 +363,64 @@ it suits for different types of responses, such as NotFound(), Ok(), StatusCode(
         }
 ```
 
+### Dependency Injection
+. In .NET Core, dependency injection has been a part of the framework, to realize DI following process should be defined:
+1. create the interface which will be injected and corresponding implements class.
+2. in ``Startup.cs``, define the service in ``ConfigureServices()``, and use ``AddScoped<TService>()`` or other methods to register services.
+3. in the class which need to use this service, use constructor injection to inject the service.
+
+    (1) create service interface and implement class.
+    ```
+    public interface IGreetingService
+    {
+        string Greet(string name);
+    }
+
+    public class GreetingService : IGreetingService
+    {
+        public string Greet(string name)
+        {
+            return $"Hello, {name}!";
+        }
+    }
+    ```
+    (2) register service in ``Startup.cs``.
+    ```
+    public class Startup
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddScoped<IGreetingService, GreetingService>();
+        }
+    }
+
+    ```
+    (3) inject service in class which need to use
+    ```
+    public class HomeController : Controller
+    {
+        private readonly IGreetingService _greetingService;
+
+        public HomeController(IGreetingService greetingService)
+        {
+            _greetingService = greetingService;
+        }
+
+        public IActionResult Index()
+        {
+            var greeting = _greetingService.Greet("World");
+            return content(greeting);
+        }
+    }
+    ```
+. **advanced application of DI**:
+1. ``AddTransient``: each request will create a new instance of the service.
+2. ``AddScoped``: same request(in one http request) use same instance, different requests use different request.
+3. ``AddSingleton``: all requests use same instance.
+
+
 ## LINQ Introduction 
-. LINQ(Language integrated Query) is a serach query language that is integrated into C# and VB.NET, which allows you to query data from various sources such as arrays, collections, XML documents, databases etc.
+. LINQ(Language integrated Query) is a serach query language that is integrated into C#, which allows you to query data from various sources such as arrays, collections, XML documents, databases etc.
 ### How to use LINQ
 1. Using System.Linq.
 2. Search query and Method query.
