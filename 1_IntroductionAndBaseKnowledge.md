@@ -330,7 +330,24 @@ public async Task ExampleMethod()
 #### summary
 **Since a thread can have multiple tasks, and without async will not stop other web api request**. Due to this reason, async and await means not distribute other threads, but improve the efficiency of the thread. With async and await, currently thread will be collected back to thread pool.
 For a instance, it's like two pipeline workers, one is responsible for the packing, and another is responsible for the moving package. if the guy is packing something, the other one is no need to wait the package and move it one by one, instead of it, he can go other position and do other works. Once the packing finish, he just need move the total package one time. This can draft describe the async and await operation.
+#### advanced method
+```
+using System.Diagnostics;
 
+public async Task ExampleMethod()
+{
+    using var cts = new CancellationTokenSource();
+    cts.CancelAfter(TimeSpan.FromSeconds(5));
+    try
+    {
+        await DoSomethingAsync(cts.Token);
+    }
+    catch (TaskCanceledException)
+    {
+        Console.WriteLine("Task canceled");
+    }
+}
+```
 ### IActionResult/ActionResult
 1. **IActionResult** is an interface in ASP.NET Core MVC that represents a result of an action method, which can be used to return different types of responses from the controller actions.
 it suits for different types of responses, such as NotFound(), Ok(), StatusCode(), File(), View(), RedirectToAction() etc.

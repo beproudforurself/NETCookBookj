@@ -3,22 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|c:\\users\\zpg1szh\\desktop\\selflearn\\.netcookbook\\api_application_based_on_restful_api\\studentstestapi\\studentstestapi1.1\\controllers\\entitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\controllers\\entitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi1.1\\studentstestapi1.1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\studentstestapi1.1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|c:\\users\\zpg1szh\\desktop\\selflearn\\.netcookbook\\api_application_based_on_restful_api\\studentstestapi\\studentstestapi1.1\\utils\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\utils\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi1.1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,8 +11,24 @@
       "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\models\\productprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi1.1\\models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|c:\\users\\zpg1szh\\desktop\\selflearn\\.netcookbook\\api_application_based_on_restful_api\\studentstestapi\\studentstestapi1.1\\models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\models\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi1.1\\controllers\\entitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\controllers\\entitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi1.1\\studentstestapi1.1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\studentstestapi1.1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi1.1\\utils\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|solutionrelative:studentstestapi1.1\\utils\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43858781-AFE4-4C3F-8C6D-54FAD885A217}|StudentsTestAPI\\StudentsTestAPI.csproj|solutionrelative:studentstestapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2F6F908-0A8F-43E9-B427-B80F4C2B3519}|StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj|C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\studentstestapi1.1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 66,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\Utils\\ApiResponse.cs",
               "RelativeDocumentMoniker": "StudentsTestAPI1.1\\Utils\\ApiResponse.cs",
@@ -74,12 +74,11 @@
               "RelativeToolTip": "StudentsTestAPI1.1\\Utils\\ApiResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T05:21:10.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T05:21:10.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "StudentsController.cs",
               "DocumentMoniker": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI\\Controllers\\StudentsController.cs",
               "RelativeDocumentMoniker": "StudentsTestAPI\\Controllers\\StudentsController.cs",
@@ -87,25 +86,24 @@
               "RelativeToolTip": "StudentsTestAPI\\Controllers\\StudentsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T06:41:15.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T06:41:15.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EntityController.cs",
               "DocumentMoniker": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\Controllers\\EntityController.cs",
               "RelativeDocumentMoniker": "StudentsTestAPI1.1\\Controllers\\EntityController.cs",
               "ToolTip": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\Controllers\\EntityController.cs",
               "RelativeToolTip": "StudentsTestAPI1.1\\Controllers\\EntityController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAABYAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T06:41:00.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "student.cs",
               "DocumentMoniker": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\Models\\student.cs",
               "RelativeDocumentMoniker": "StudentsTestAPI1.1\\Models\\student.cs",
@@ -118,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ProductPrice.cs",
               "DocumentMoniker": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\Models\\ProductPrice.cs",
               "RelativeDocumentMoniker": "StudentsTestAPI1.1\\Models\\ProductPrice.cs",
@@ -131,29 +129,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "databaseContext.cs",
               "DocumentMoniker": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\Models\\databaseContext.cs",
               "RelativeDocumentMoniker": "StudentsTestAPI1.1\\Models\\databaseContext.cs",
               "ToolTip": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\Models\\databaseContext.cs",
               "RelativeToolTip": "StudentsTestAPI1.1\\Models\\databaseContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABuAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAmwCgAAAByAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T06:36:45.317Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "StudentsTestAPI1.1.csproj",
               "DocumentMoniker": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj",
               "RelativeDocumentMoniker": "StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj",
               "ToolTip": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj",
               "RelativeToolTip": "StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-20T06:10:50.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T06:10:50.695Z"
             },
             {
               "$type": "Document",
@@ -176,6 +173,16 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 139,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

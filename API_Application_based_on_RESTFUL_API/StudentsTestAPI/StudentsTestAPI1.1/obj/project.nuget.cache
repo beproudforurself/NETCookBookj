@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qGbz2c5eG2kNQ6u4E2FrunPQOnzF9ua0v2duaNKmZbRyJZFIy+J+tWZOPbj593RGYmXv7lveMxOj0MNMDQgd0g==",
+  "dgSpecHash": "+2prxoAcM8LjmBIP7ma1cwjrdjcgEhcBfN0lMCoRuSnLGbAgwz3JLQl06FkvYoHHZ3nEPG3vxNHCEWl0QYHcGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ZPG1SZH\\Desktop\\SelfLearn\\.NETCookBook\\API_Application_based_on_RESTFUL_API\\StudentsTestAPI\\StudentsTestAPI1.1\\StudentsTestAPI1.1.csproj",
   "expectedPackageFiles": [
@@ -40,11 +40,7 @@
     "C:\\Users\\ZPG1SZH\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\ZPG1SZH\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\ZPG1SZH\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\ZPG1SZH\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\ZPG1SZH\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ZPG1SZH\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ZPG1SZH\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ZPG1SZH\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
+    "C:\\Users\\ZPG1SZH\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
